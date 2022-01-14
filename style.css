@@ -1,0 +1,84 @@
+:root {
+  /*Fonts*/
+  --fontFamilyN: Newsreader;
+  --fontFamilyK: Kanit;
+  --fontFamilyM: Mulish;
+  --fontSizeLinks: 20px;
+  --fontBold: bold;
+
+  /*Colors*/
+  --bluePrimary: #2937f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.containerFlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerFlexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  font-family: var(--fontFamilyK);
+  font-size: var(--fontSizeLinks);
+  font-weight: normal;
+}
+
+
+/*NavBar*/
+nav {
+  padding: 20px 0 20px 0;
+  font-family: var(--fontFamilyK);
+  border-bottom: solid 1px #EAEBEC;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  width: 50%;
+  font-family: var(--fontFamilyK);
+  margin-left: 8%;
+}
+
+.navActions {
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 8%;
+}
+
+.navLinks {
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 67%;
+}
+
+.feedbackButton {
+  width: auto;
+  height: auto;
+  color: white;
+  background-color: var(--bluePrimary);
+  padding: 8px 15px 8px 15px;
+  border: 0px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.messageIcon {
+  font-size: 22px;
+  margin-right: 10px;
+}
