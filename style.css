@@ -6,6 +6,7 @@
   --fontSizeLinks: 20px;
   --fontBold: bold;
 
+
   /*Colors*/
   --bluePrimary: #2937f0;
 }
@@ -13,6 +14,19 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+header {
+  z-index: 0;
+}
+
+h1 {
+  font-size: 110px;
+  font-family: var(--fontFamilyN);
+}
+
+p {
+  font-family: var(--fontFamilyK);
 }
 
 .containerFlexColumn {
@@ -42,6 +56,7 @@ nav {
   top: 0;
   left: 0;
   justify-content: space-between;
+  background-color: white;
 }
 
 .logo {
@@ -81,4 +96,92 @@ nav {
 .messageIcon {
   font-size: 22px;
   margin-right: 10px;
+}
+
+/* Home Section */
+.homeSection {
+  position: absolute;
+  top: 89px;
+  z-index: -1;
+  width: 100%;
+  height: calc(100vh - 89px);
+}
+
+.divTextHomeSection {
+  padding-left: 8%;
+  align-items: center;
+  margin: auto 0 auto 0;
+  width: 50%;
+}
+
+.classTextLines {
+  word-break: break-word;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align: left;
+  width: 90%;
+}
+
+.textDescriptionHomeSection {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.divPhoneHomeSection {
+  padding-right: 6%;
+  width: 50%;
+  justify-content: center;
+  z-index: -3;
+}
+
+.divImageHomeSection {
+  width: 600px;
+  height: 100%;
+  z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgPhone {
+  width: 400px;
+  height: auto;
+  left: auto;
+  z-index: 0;
+  position: absolute;
+}
+
+.circlePhone {
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  z-index: -1;
+  position: absolute;
+  background-image: linear-gradient(to bottom right, var(--bluePrimary), #9F1AE2);
+}
+
+.point {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+margin-top: 150px;
+  background-color: var(--bluePrimary);
+}
+
+.divXIcon {
+  padding-bottom: auto;
+  padding-top: 675px;
+}
+.xIcon {
+  font-size: 30px;
+  color: var(--bluePrimary);
+  transform: rotate(-20deg);
+}
+
+.phoneVideo {
+  width: 390px;
+  height: 780px;
+  border-radius: 50px;
 }
