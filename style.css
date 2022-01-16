@@ -64,14 +64,14 @@ nav {
   font-weight: bold;
   width: 50%;
   font-family: var(--fontFamilyK);
-  margin-left: 8%;
+  margin-left: 10%;
 }
 
 .navActions {
   width: 50%;
   align-items: center;
   justify-content: space-between;
-  margin-right: 8%;
+  margin-right: 10%;
 }
 
 .navLinks {
@@ -168,7 +168,7 @@ nav {
   width: 15px;
   height: 15px;
   border-radius: 100%;
-margin-top: 150px;
+  margin-top: 150px;
   background-color: var(--bluePrimary);
 }
 
@@ -176,6 +176,7 @@ margin-top: 150px;
   padding-bottom: auto;
   padding-top: 675px;
 }
+
 .xIcon {
   font-size: 30px;
   color: var(--bluePrimary);
@@ -187,3 +188,46 @@ margin-top: 150px;
   height: 780px;
   border-radius: 50px;
 }
+
+/* Note Section */
+.noteSection {
+  position: absolute;
+  top: 100VH;
+  width: 90%;
+  height: calc(100vh - 89px);
+  background-image: url(./images/Notes.jpg);
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  max-width: 90%;
+  padding: 0 0 0 10%;
+  z-index: -1;
+}
+
+.noteSectionTextLines {
+  color: white;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align: left;
+  width: 70%;
+  padding-top: 15%;
+}
+
+.programateButton {
+    width: auto;
+    height: auto;
+    color: white;
+    background-image: unset;
+    padding: 20px;
+    border: 0px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
