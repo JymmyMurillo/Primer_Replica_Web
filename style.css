@@ -3,7 +3,7 @@
   --fontFamilyN: Newsreader;
   --fontFamilyK: Kanit;
   --fontFamilyM: Mulish;
-  --fontSizeLinks: 20px;
+  --fontSizeLinks: 24px;
   --fontBold: bold;
 
 
@@ -79,6 +79,7 @@ nav {
   list-style: none;
   justify-content: space-evenly;
   width: 67%;
+  font-size: var(--fontSizeLinks);
 }
 
 .feedbackButton {
@@ -127,6 +128,7 @@ nav {
 .textDescriptionHomeSection {
   font-size: 30px;
   margin-top: 20px;
+  color: #6C757D;
 }
 
 .divPhoneHomeSection {
