@@ -321,3 +321,30 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
+/* Footer Section */
+footer {
+  position: absolute;
+  top: calc(300vh - 89px);
+  height: auto;
+  width: 100%;
+  background-color: black;
+  color: #7C7C7C;
+  align-items: center;
+  padding: 50px 0 50px 0;
+}
+
+.textFooter {
+  font-size: 20px;
+}
+
+.ulFooter {
+  width: 370px;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: var(--fontFamilyM);
+}
+
+.liTerminos {
+  list-style: none;
+}
