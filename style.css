@@ -3,7 +3,7 @@
   --fontFamilyN: Newsreader;
   --fontFamilyK: Kanit;
   --fontFamilyM: Mulish;
-  --fontSizeLinks: 24px;
+  --fontSizeLinks: 2.4rem;
   --fontBold: bold;
 
 
@@ -16,17 +16,21 @@
   padding: 0;
 }
 
+html {
+font-size: 10px;
+}
+
 header {
   z-index: 0;
 }
 
 h1 {
-  font-size: 110px;
+  font-size: 11rem;
   font-family: var(--fontFamilyN);
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 4rem;
   font-family: var(--fontFamilyK);
 }
 
@@ -42,7 +46,7 @@ a:hover {
 
 p {
   font-family: var(--fontFamilyK);
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .containerFlexColumn {
@@ -64,9 +68,9 @@ button {
 
 /*NavBar*/
 nav {
-  padding: 20px 0 20px 0;
+  padding: 2rem 0 2rem 0;
   font-family: var(--fontFamilyK);
-  border-bottom: solid 1px #EAEBEC;
+  border-bottom: solid 0.1rem #EAEBEC;
   position: fixed;
   width: 100%;
   top: 0;
@@ -76,7 +80,7 @@ nav {
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: bold;
   width: 50%;
   font-family: var(--fontFamilyK);
@@ -104,9 +108,9 @@ nav {
   color: white;
   font-size: var(--fontSizeLinks);
   background-color: var(--bluePrimary);
-  padding: 8px 15px 8px 15px;
-  border: 0px;
-  border-radius: 25px;
+  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  border: 0;
+  border-radius: 2.5rem;
   align-items: center;
   justify-content: center;
 }
@@ -123,17 +127,17 @@ nav {
 
 
 .messageIcon {
-  font-size: 22px;
-  margin-right: 10px;
+  font-size: 2.2rem;
+  margin-right: 1rem;
 }
 
 /* Home Section */
 .homeSection {
   position: absolute;
-  padding-top: 89px;
+  padding-top: 8.9rem;
   z-index: -1;
   width: 100%;
-  height: calc(100vh - 89px);
+  height: calc(100vh - 8.9rem);
 }
 
 .divTextHomeSection {
@@ -154,8 +158,8 @@ nav {
 }
 
 .textDescriptionHomeSection {
-  font-size: 30px;
-  margin-top: 20px;
+  font-size: 3rem;
+  margin-top: 2rem;
   color: #6C757D;
 }
 
@@ -167,7 +171,7 @@ nav {
 }
 
 .divImageHomeSection {
-  width: 600px;
+  width: 60rem;
   height: 100%;
   z-index: -2;
   display: flex;
@@ -176,7 +180,7 @@ nav {
 }
 
 .imgPhone {
-  width: 400px;
+  width: 40rem;
   height: auto;
   left: auto;
   z-index: 0;
@@ -184,8 +188,8 @@ nav {
 }
 
 .circlePhone {
-  width: 600px;
-  height: 600px;
+  width: 60rem;
+  height: 60rem;
   border-radius: 100%;
   z-index: -1;
   position: absolute;
@@ -193,28 +197,28 @@ nav {
 }
 
 .point {
-  width: 15px;
-  height: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 100%;
-  margin-top: 150px;
+  margin-top: 15rem;
   background-color: var(--bluePrimary);
 }
 
 .divXIcon {
   padding-bottom: auto;
-  padding-top: 675px;
+  padding-top: 67.5rem;
 }
 
 .xIcon {
-  font-size: 30px;
+  font-size: 3rem;
   color: var(--bluePrimary);
   transform: rotate(-20deg);
 }
 
 .phoneVideo {
-  width: 390px;
-  height: 780px;
-  border-radius: 50px;
+  width: 39rem;
+  height: 78rem;
+  border-radius: 5rem;
 }
 
 /* Note Section */
@@ -241,7 +245,7 @@ nav {
   text-align: left;
   width: 70%;
   padding-top: 15%;
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
 }
 
 .programateButton {
@@ -249,13 +253,13 @@ nav {
   height: auto;
   color: white;
   background-image: unset;
-  padding: 20px;
-  border: 0px;
-  border-radius: 40px;
+  padding: 2rem;
+  border: 0;
+  border-radius: 4rem;
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  border: 2px solid white;
+  border: 0.2rem solid white;
   font-size: var(--fontSizeLinks);
 }
 
@@ -270,7 +274,7 @@ nav {
   top: 200vh;
 
   width: 90%;
-  height: calc(100vh - 89px);
+  height: calc(100vh - 8.9rem);
   padding: 0 0 0 10%;
   z-index: -1;
   align-content: center;
@@ -280,11 +284,11 @@ nav {
   width: 35%;
   justify-content: center;
   z-index: -3;
-  padding-top: 178px;
+  padding-top: 17.8rem;
 }
 
 .divImageLearnSection {
-  width: 500px;
+  width: 50rem;
   height: 100%;
   z-index: -2;
   display: flex;
@@ -294,31 +298,31 @@ nav {
 }
 
 .pointLearnSection {
-  width: 15px;
-  height: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 100%;
-  margin-top: 650px;
+  margin-top: 65rem;
   background-color: var(--bluePrimary);
 }
 
 
 .circlePhoneLearnSection {
-  width: 400px;
-  height: 400px;
+  width: 40rem;
+  height: 40rem;
   border-radius: 100%;
   z-index: -1;
   position: absolute;
-  left: 200px;
+  left: 20rem;
   background-image: linear-gradient(to bottom, var(--bluePrimary), #9F1AE2);
 }
 
 .divXIcon {
   padding-bottom: auto;
-  padding-top: 60px;
+  padding-top: 6rem;
 }
 
 .xIcon {
-  font-size: 30px;
+  font-size: 3rem;
   color: var(--bluePrimary);
   transform: rotate(-20deg);
 }
@@ -327,7 +331,7 @@ nav {
   width: 65%;
   height: 100%;
   padding-right: 10%;
-  padding-top: calc(89px + 40px);
+  padding-top: calc(8.9rem + 4rem);
   justify-content: space-between;
 }
 
@@ -343,34 +347,34 @@ nav {
 }
 
 .learnSectionIcons {
-  font-size: 70px;
+  font-size: 7rem;
   background: -webkit-linear-gradient(var(--bluePrimary), #9F1AE2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
 }
 
 /* Footer Section */
 footer {
   position: absolute;
-  top: calc(300vh + 89px);
+  top: calc(300vh + 8.9rem);
   height: auto;
   width: 100%;
   background-color: black;
   color: #7C7C7C;
   align-items: center;
-  padding: 50px 0 50px 0;
+  padding: 5rem 0 5rem 0;
 }
 
 .textFooter {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .ulFooter {
-  width: 370px;
+  width: 37rem;
   justify-content: space-between;
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 2rem;
+  margin-top: 2rem;
   font-family: var(--fontFamilyM);
 }
 
