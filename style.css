@@ -25,8 +25,14 @@ h1 {
   font-family: var(--fontFamilyN);
 }
 
+h2 {
+  font-size: 40px;
+  font-family: var(--fontFamilyK);
+}
+
 p {
   font-family: var(--fontFamilyK);
+  font-size: 24px;
 }
 
 .containerFlexColumn {
@@ -109,7 +115,7 @@ nav {
 }
 
 .divTextHomeSection {
-  padding-left: 8%;
+  padding-left: 10%;
   align-items: center;
   margin: auto 0 auto 0;
   width: 50%;
@@ -192,14 +198,13 @@ nav {
 /* Note Section */
 .noteSection {
   position: absolute;
-  top: 100VH;
+  top: 100vh;
   width: 90%;
   height: calc(100vh - 89px);
   background-image: url(./images/Notes.jpg);
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
   background-size: cover;
-  max-width: 90%;
   padding: 0 0 0 10%;
   z-index: -1;
 }
@@ -217,17 +222,102 @@ nav {
 }
 
 .programateButton {
-    width: auto;
-    height: auto;
-    color: white;
-    background-image: unset;
-    padding: 20px;
-    border: 0px;
-    border-radius: 40px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    background-color: transparent;
-    border: 2px solid white;
+  width: auto;
+  height: auto;
+  color: white;
+  background-image: unset;
+  padding: 20px;
+  border: 0px;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+/* Learn Section */
+.learnSection {
+  position: absolute;
+  top: calc(200vh - 89px);
+  width: 90%;
+  height: calc(100vh - 89px);
+  padding: 0 0 0 10%;
+  z-index: -1;
+
+  align-content: center;
+}
+
+.divPhoneLearnSection {
+  width: 35%;
+  justify-content: center;
+  z-index: -3;
+
+}
+
+.divImageLearnSection {
+  width: 500px;
+  height: 100%;
+  z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.pointLearnSection {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-top: 650px;
+  background-color: var(--bluePrimary);
+}
+
+
+.circlePhoneLearnSection {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  z-index: -1;
+  position: absolute;
+  left: 200px;
+  background-image: linear-gradient(to bottom, var(--bluePrimary), #9F1AE2);
+}
+
+.divXIcon {
+  padding-bottom: auto;
+  padding-top: 60px;
+}
+
+.xIcon {
+  font-size: 30px;
+  color: var(--bluePrimary);
+  transform: rotate(-20deg);
+}
+
+.divTextLearnSection {
+  width: 65%;
+  height: 100%;
+  padding-right: 10%;
+  padding-top: 40px;
+  justify-content: space-between;
+}
+
+.divsRowIcons {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.divsIconText {
+  align-items: center;
+  width: 40%;
+  text-align: center;
+}
+
+.learnSectionIcons {
+  font-size: 70px;
+  background: -webkit-linear-gradient(var(--bluePrimary), #9F1AE2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
