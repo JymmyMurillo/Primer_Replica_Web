@@ -98,7 +98,6 @@ nav {
   font-size: var(--fontSizeLinks);
 }
 
-
 .feedbackButton {
   width: auto;
   height: auto;
@@ -131,7 +130,7 @@ nav {
 /* Home Section */
 .homeSection {
   position: absolute;
-  top: 89px;
+  padding-top: 89px;
   z-index: -1;
   width: 100%;
   height: calc(100vh - 89px);
@@ -223,7 +222,7 @@ nav {
   position: absolute;
   top: 100vh;
   width: 90%;
-  height: calc(100vh - 89px);
+  height: calc(100vh);
   background-image: url(./images/Notes.jpg);
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
@@ -268,12 +267,12 @@ nav {
 /* Learn Section */
 .learnSection {
   position: absolute;
-  top: calc(200vh - 89px);
+  top: 200vh;
+
   width: 90%;
   height: calc(100vh - 89px);
   padding: 0 0 0 10%;
   z-index: -1;
-
   align-content: center;
 }
 
@@ -281,7 +280,7 @@ nav {
   width: 35%;
   justify-content: center;
   z-index: -3;
-
+  padding-top: 178px;
 }
 
 .divImageLearnSection {
@@ -328,7 +327,7 @@ nav {
   width: 65%;
   height: 100%;
   padding-right: 10%;
-  padding-top: 40px;
+  padding-top: calc(89px + 40px);
   justify-content: space-between;
 }
 
@@ -348,12 +347,13 @@ nav {
   background: -webkit-linear-gradient(var(--bluePrimary), #9F1AE2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-bottom: 40px;
 }
 
 /* Footer Section */
 footer {
   position: absolute;
-  top: calc(300vh - 89px);
+  top: calc(300vh + 89px);
   height: auto;
   width: 100%;
   background-color: black;
