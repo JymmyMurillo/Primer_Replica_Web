@@ -25,20 +25,29 @@
       <p class="logo">Réplica Web</p>
       <div class="containerFlexRow navActions">
         <ul class="containerFlexRow navLinks">
-          <li>Inicio</li>
-          <li>Notas</li>
-          <li>Aprendizaje</li>
+          <li><a href="#home">Inicio</a> </li>
+          <li><a href="#notes">Notas</a></li>
+          <li><a href="#learn">Aprendizaje</a></li>
         </ul>
-        <button class="containerFlexRow feedbackButton">
-          <span><i class="bi bi-chat-text-fill containerFlexRow messageIcon"></i></span>
-          <span>Enviar Feedback</span>
-        </button>
+
+
+
+        <a class="feedbackButton" href="https://educamas.com.co/contacto/" target="_blank">
+          <div class="containerFlexRow divFeedbackButton">
+            <span><i class="bi bi-chat-text-fill containerFlexRow messageIcon"></i></span>
+            <span>Enviar Feedback</span>
+          </div>
+        </a>
+
+
+
+
       </div>
     </nav>
   </header>
 
   <!-- Home Section-->
-  <section class="containerFlexRow homeSection">
+  <section id="home" class="containerFlexRow homeSection">
     <div class="containerFlexColumn divTextHomeSection">
       <h1 class="classTextLines">¡Muéstranos tu talento programando!</h1>
       <p class="classTextLines textDescriptionHomeSection">Esta es una oportunidad para que nos deslumbres y nos hagas
@@ -64,17 +73,19 @@
   </section>
 
   <!-- Note Section-->
-  <section class="noteSection">
+  <section id="notes" class="noteSection">
     <div class="noteSectionTextLines">
       <h1>Y toma nota...</h1>
       <h1>De lo que seguirás aprendiendo.</h1>
     </div>
-    <button class="programateButton"><span>Prográmate Educamás</span></button>
+
+    <a class="programateButton" href="https://educamas.com.co/programate/" target="_blank">Prográmate Educamás</a>
+
 
   </section>
 
   <!-- Learn Section-->
-  <section class="containerFlexRow learnSection">
+  <section id="learn" class="containerFlexRow learnSection">
 
     <div class="containerFlexRow divPhoneLearnSection">
 

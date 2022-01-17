@@ -30,6 +30,16 @@ h2 {
   font-family: var(--fontFamilyK);
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  font-family: var(--fontFamilyK);
+}
+
+a:hover {
+  color: var(--bluePrimary);
+}
+
 p {
   font-family: var(--fontFamilyK);
   font-size: 24px;
@@ -88,10 +98,12 @@ nav {
   font-size: var(--fontSizeLinks);
 }
 
+
 .feedbackButton {
   width: auto;
   height: auto;
   color: white;
+  font-size: var(--fontSizeLinks);
   background-color: var(--bluePrimary);
   padding: 8px 15px 8px 15px;
   border: 0px;
@@ -99,6 +111,17 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
+.feedbackButton:hover {
+  color: white;
+  background-color: #5660ec;
+}
+
+.divFeedbackButton {
+  align-items: center;
+}
+
+
 
 .messageIcon {
   font-size: 22px;
@@ -219,6 +242,7 @@ nav {
   text-align: left;
   width: 70%;
   padding-top: 15%;
+  margin-bottom: 100px;
 }
 
 .programateButton {
@@ -231,9 +255,14 @@ nav {
   border-radius: 40px;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
   background-color: transparent;
   border: 2px solid white;
+  font-size: var(--fontSizeLinks);
+}
+
+.programateButton:hover {
+  color: white;
+  background-color: black;
 }
 
 /* Learn Section */
