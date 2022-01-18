@@ -36,7 +36,6 @@ h2 {
 }
 
 a {
-  color: black;
   text-decoration: none;
   font-family: var(--fontFamilyK);
 }
@@ -102,6 +101,14 @@ nav {
   justify-content: space-evenly;
   width: 67%;
   font-size: var(--fontSizeLinks);
+}
+
+.navLinksActive {
+  color: var(--bluePrimary);
+}
+
+.navLinksInactive {
+ color: black;
 }
 
 .feedbackButton {

@@ -25,9 +25,9 @@
       <p class="logo">Réplica Web</p>
       <div class="containerFlexRow navActions">
         <ul class="containerFlexRow navLinks">
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#notes">Notas</a></li>
-          <li><a href="#learn">Aprendizaje</a></li>
+          <li><a onclick="functionHomeBtn()" id="homeBtn" class="navLinksActive" href="#home">Inicio</a></li>
+          <li><a onclick="functionNotesBtn()" id="notesBtn" class="navLinksInactive" href="#notes">Notas</a></li>
+          <li><a onclick="functionLearnBtn()" id="learnBtn" class="navLinksInactive" href="#learn">Aprendizaje</a></li>
         </ul>
 
         <a class="feedbackButton" href="https://educamas.com.co/contacto/" target="_blank">
@@ -147,6 +147,59 @@
     </ul>
   </footer>
 
+  <script>
+    const homeBtn = document.getElementById("homeBtn");
+    const notesBtn = document.getElementById("notesBtn");
+    chomelearnBtn = document.getElementById("learnBtn");
+
+    function functionHomeBtn() {
+      if (homeBtn.classList.contains("navLinksInactive")) {
+        homeBtn.classList.remove("navLinksInactive");
+        homeBtn.classList.add("navLinksActive");
+
+        if (notesBtn.classList.contains("navLinksActive")) {
+          notesBtn.classList.remove("navLinksActive");
+          notesBtn.classList.add("navLinksInactive");
+        };
+        if (learnBtn.classList.contains("navLinksActive")) {
+          learnBtn.classList.remove("navLinksActive");
+          learnBtn.classList.add("navLinksInactive");
+        };
+      }
+    };
+
+    function functionNotesBtn() {
+      if (notesBtn.classList.contains("navLinksInactive")) {
+        notesBtn.classList.remove("navLinksInactive");
+        notesBtn.classList.add("navLinksActive");
+
+        if (homeBtn.classList.contains("navLinksActive")) {
+          homeBtn.classList.remove("navLinksActive");
+          homeBtn.classList.add("navLinksInactive");
+        };
+        if (learnBtn.classList.contains("navLinksActive")) {
+          learnBtn.classList.remove("navLinksActive");
+          learnBtn.classList.add("navLinksInactive");
+        };
+      }
+    };
+
+    function functionLearnBtn() {
+      if (learnBtn.classList.contains("navLinksInactive")) {
+        learnBtn.classList.remove("navLinksInactive");
+        learnBtn.classList.add("navLinksActive");
+
+        if (notesBtn.classList.contains("navLinksActive")) {
+          notesBtn.classList.remove("navLinksActive");
+          notesBtn.classList.add("navLinksInactive");
+        };
+        if (homeBtn.classList.contains("navLinksActive")) {
+          homeBtn.classList.remove("navLinksActive");
+          homeBtn.classList.add("navLinksInactive");
+        };
+      }
+    };
+  </script>
 </body>
 
 </html>
