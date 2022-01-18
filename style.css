@@ -16,6 +16,7 @@
   padding: 0;
 }
 
+
 html {
 font-size: 10px;
 }
@@ -73,6 +74,8 @@ nav {
   border-bottom: solid 0.1rem #EAEBEC;
   position: fixed;
   width: 100%;
+  max-width: 192rem;
+  height: 5.6rem;
   top: 0;
   left: 0;
   justify-content: space-between;
@@ -84,14 +87,14 @@ nav {
   font-weight: bold;
   width: 50%;
   font-family: var(--fontFamilyK);
-  margin-left: 10%;
+  margin-left: 8%;
 }
 
 .navActions {
   width: 50%;
   align-items: center;
   justify-content: space-between;
-  margin-right: 10%;
+  margin-right: 8%;
 }
 
 .navLinks {
@@ -103,14 +106,14 @@ nav {
 }
 
 .feedbackButton {
-  width: auto;
-  height: auto;
+  width: 22rem;
+  height: 4rem;
   color: white;
   font-size: var(--fontSizeLinks);
   background-color: var(--bluePrimary);
   padding: 0.8rem 1.5rem 0.8rem 1.5rem;
   border: 0;
-  border-radius: 2.5rem;
+  border-radius: 3rem;
   align-items: center;
   justify-content: center;
 }
@@ -121,7 +124,7 @@ nav {
 }
 
 .divFeedbackButton {
-  align-items: center;
+  align-items : center;
 }
 
 
@@ -137,11 +140,15 @@ nav {
   padding-top: 8.9rem;
   z-index: -1;
   width: 100%;
+  max-width: 192rem;
   height: calc(100vh - 8.9rem);
+  max-height: 100rem;
+
 }
 
+
 .divTextHomeSection {
-  padding-left: 10%;
+  padding-left: 6%;
   align-items: center;
   margin: auto 0 auto 0;
   width: 50%;
@@ -154,7 +161,7 @@ nav {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-align: left;
-  width: 90%;
+  width: 85%;
 }
 
 .textDescriptionHomeSection {
@@ -204,9 +211,9 @@ nav {
   background-color: var(--bluePrimary);
 }
 
-.divXIcon {
+.divXIconHomeSexction {
   padding-bottom: auto;
-  padding-top: 67.5rem;
+  padding-top: 70rem;
 }
 
 .xIcon {
@@ -218,21 +225,26 @@ nav {
 .phoneVideo {
   width: 39rem;
   height: 78rem;
-  border-radius: 5rem;
+  border-radius: 6rem;
 }
 
 /* Note Section */
 .noteSection {
   position: absolute;
   top: 100vh;
-  width: 90%;
-  height: calc(100vh);
+  width: 100%;
+  max-width: 192rem;
+  height: 100vh;
+  max-height: 100rem;
   background-image: url(./images/Notes.jpg);
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
-  background-size: cover;
-  padding: 0 0 0 10%;
+  background-size:cover;
   z-index: -1;
+}
+
+.divNoteSection {
+  padding-left: 10%;
 }
 
 .noteSectionTextLines {
@@ -245,6 +257,7 @@ nav {
   text-align: left;
   width: 70%;
   padding-top: 15%;
+ 
   margin-bottom: 10rem;
 }
 
@@ -271,20 +284,25 @@ nav {
 /* Learn Section */
 .learnSection {
   position: absolute;
-  top: 200vh;
-
-  width: 90%;
+  top:200vh;
+  width:100%;
+  max-width: 192rem;
   height: calc(100vh - 8.9rem);
-  padding: 0 0 0 10%;
+  max-height: 100rem;
+  padding: 0 0 10% 0;
   z-index: -1;
   align-content: center;
+
 }
+
 
 .divPhoneLearnSection {
   width: 35%;
+  align-items: center;
   justify-content: center;
   z-index: -3;
   padding-top: 17.8rem;
+  padding-left: 10%;
 }
 
 .divImageLearnSection {
@@ -293,8 +311,7 @@ nav {
   z-index: -2;
   display: flex;
   align-items: center;
-  justify-content: center;
-
+  justify-content:center;
 }
 
 .pointLearnSection {
@@ -312,13 +329,14 @@ nav {
   border-radius: 100%;
   z-index: -1;
   position: absolute;
-  left: 20rem;
+  left: 15rem;
   background-image: linear-gradient(to bottom, var(--bluePrimary), #9F1AE2);
 }
 
 .divXIcon {
-  padding-bottom: auto;
-  padding-top: 6rem;
+ height: 100%;
+  top: 0;
+
 }
 
 .xIcon {
@@ -360,6 +378,7 @@ footer {
   top: calc(300vh + 8.9rem);
   height: auto;
   width: 100%;
+  max-width: 192rem;
   background-color: black;
   color: #7C7C7C;
   align-items: center;
