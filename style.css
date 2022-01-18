@@ -156,12 +156,12 @@ nav {
 
 .classTextLines {
   word-break: break-word;
-  text-overflow: ellipsis;
+  text-overflow:ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-align: left;
-  width: 85%;
+  width: 90%;
 }
 
 .textDescriptionHomeSection {
